@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: verdana;
+    text-decoration: none;
+}
+
+.menu1
+{
+    position: fixed;
+    top: 0;
+    background-color: #3c096c;
+    width: 100%;
+    height: 5vh;
+    color: white;
+    place-items: center;
+    display: flex;
+    border-top: 3px dotted white;
+    z-index: 10000;
+}
+.left-icon
+{
+    position: absolute;
+    left: 5vh;
+    display: flex;
+}
+
+.left-icon i
+{
+    color: white;
+    font-weight: bold;
+}
+.left-icon p, .right-icon i
+{
+    margin-left: 3vh;
+    font-size: 17px;
+
+}
+
+.right-icon
+{    
+    position: absolute;
+    right: 5vh;
+}
+
+/* MENU2 */
+.menu2
+{
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    top: 5vh;
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+    z-index: 1000;
+}
+.menu2 .logo img
+{
+    max-width: 55px;
+    max-height: 45px;
+    position: absolute;
+    left: 5vh;
+    top: 1.5vh;
+}
+
+.elements ul
+{
+    display: flex;
+    position: absolute;
+    right: 1.5vh;
+    top: 3vh;
+}
+.elements ul a
+{
+    margin-left: 3vh;
+    color: black;
+    font-weight: bold;
+    font-family: "Merriweather", serif;
+}
+.elements ul a i
+{
+    color: #3c096c;
+}
+.elements .hamburger {
+    display: none;
+    width: 35px;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+
+}
+@media screen and (max-width: 700px) {
+    .left-icon{
+        display: none;
+    }
+    .bienvenue{
+        width: 100%;
+        
+    }
+}
+@media screen and (max-width: 1000px) {
+    .menu2 {
+        position: absolute;
+        background-color: rgba(63, 63, 222, 0.253);
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        position: fixed;
+        
+    }
+    .elements ul{
+        display: flex;
+        flex-direction: column;
+        
+        
+        
+    }
+    .elements ul li{
+        margin: 25px 0;
+
+    }
+    .elements ul li a{
+        color: red;
+    }
+    
+    
+    .elements{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+    figure {
+        width: 90%;
+    }
+    
+    main figure #ngom,#ben,#oum,#amy {
+        width: 100%;
+    }
+    main figure #oum{
+        width: 100%;
+    }
+    hgroup pre{
+        display: none;
+    }
+    .introd {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 990px){
+    .main-fig{
+        margin: auto;
+    }
+    form{
+        width: 100%;
+        display: flex;
+        
+        
+    }
+    main form input{
+        width: 50%;
+    }
+    .genre-value{
+        display: flex;
+        flex-direction: column;
+    }
+    textarea{
+        width: 95%;
+    }
+    button{
+        width: 0%;
+    }
+    .news input{
+        width: 100%;
+        margin: 10px;
+    }
+
+}
+
+ /* parti Contact */
+    form
+    {
+        background-color: #3c096c;
+        width: 35%;
+        height: px;
+        display: block;
+        margin: auto;
+        margin-top: 25vh;
+        margin-bottom: 5vh;
+        border-radius: 6px;
+        justify-content: space-around;
+        padding: 20px;
+        
+    }
+    .radio label {
+        color: #fff;
+    }
+    form >input
+    {
+        width: 80%;
+        height: 40PX;
+        padding: 0 40px;
+        margin: 6px 0;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        background-color: #F5F6F7;
+        font-size: 15px;
+        /* margin: 15px;
+        padding: 15px;
+        width: 60%; */
+    }
+    main form pre{
+        color: #fff;
+        font-weight: bold;
+        margin: 5px;
+    }
+    .valider
+    {
+        margin: 20px;
+        padding: 6px;
+        width: 40%;
+        float: right;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius:  6px;
+        cursor: pointer;
+        color: black;
+        font-style: italic;
+        font-weight: bold;
+    }
+    .annuler
+    {
+        margin: 20px;
+        padding: 6px;
+        width: 40%;
+        background: rgb(236, 57, 57);
+        border: 1px solid #ccc;
+        border-radius:  6px;
+        cursor: pointer;
+        color: white;
+        font-style: italic;
+        font-weight: bold;
+        display: block;
+        justify-items: flex-end;
+    }
+    .genre-value{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+       /* background-color: #F5F6F7; */
+    }
+    .radio, #genre
+    {
+        margin: 5px;
+    }
+    .radio,input{
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 5px;
+    }
+
+    form textarea
+    {
+         border: 1px solid #ccc;
+         background-color: #F5F6F7;
+         font-size: 15px;
+         display: block;
+         justify-content: space-between;
+         border-radius: 5px;
+    }
+    main .bienvenue img
+    {
+        width: 50%;
+        float: right;
+        height: 500px;
+        margin-top: -15vh;
+        margin-bottom: 5vh;
+        border-radius: 100vh;
+    }
+   
+    
+    
+     .bienvenue{
+        margin-top: 80vh;
+     }
+    .bienvenue h1
+    {
+        margin-top: -350px;
+        margin-left: 5vh;
+        font-family: "Merriweather", serif;
+    }
+    .bienvenue h1
+    {
+        font-weight: bold;
+        font-size: 70px;
+    }
+    .bienvenue p
+    {
+        color: black;
+        margin-left: 5vh;
+        margin-top: 3vh;
+        letter-spacing: px;
+        word-spacing: 3px;
+        font-family: "Merriweather", serif;
+        font-weight: bold;
+    }
+    main .introd {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr;
+      grid-column-gap: 15px;
+      grid-row-gap: 5px;
+      border-radius:  4px;
+      margin-top: 200px;
+      margin-bottom: 5vh;
+      background-color: hwb(0 80% 20% / 0.201);
+    }
+
+    .parti-photo { grid-area: 1 / 1 / 2 / 2; }
+    .parti-text { grid-area: 1 / 2 / 2 / 3; }
+
+    .introd .parti-photo img{
+        width: 100%;
+        height: 20rem;
+        margin-bottom: 5vh;
+    }
+    .introd .parti-text p{
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        margin-top: 5vh;
+        padding: 6px;
+        font-family: "Merriweather", serif;
+        word-spacing: 3px;
+        line-height: 2rem;
+    }
+
+    /* partie footer */
+    footer{
+        background-color: #3c096c;
+        display: flex;
+    }
+    footer address{
+        display: flex;
+        margin: auto;
+        color: #fff;
+        padding: 5px;
+        border-left: 5px solid #fff;
+        border-right: 5px solid #fff;
+    }
+    hgroup{
+        float: right;
+        padding: 10px;
+    }
+    hgroup p{
+        display: flex;
+        justify-items: flex-start;
+        flex-wrap: wrap;
+        margin-left: 5vh;
+        color: #fff;
+        margin: 15px;
+        padding: 10px;
+    }
+    hgroup pre{
+        text-align: center;
+        font-size: 18px;
+        font-family: "Merriweather", serif;
+        margin-left: 50vh;
+        margin-top: 5vh;
+        color: #fff;
+    }
+    hgroup p i{
+        margin: 5px;
+    }
+    .icon-footer{
+        align-self: self-end;
+        margin-right: 100px;
+        padding: 15px;
+        margin: 10px;
+    }
+    .icon-footer i{
+        margin: 15px;
+        color: #fff;
+    }
+    .news{
+        margin: 20px;
+    }
+    .news label{
+        font-size: 18px;
+        font-family: "Merriweather", serif;
+        color: white;
+    }
+    .news button{
+        padding: 5px;
+        cursor: pointer;
+        color: black;
+        width: 60px;
+    }
+    .news input{
+        padding: 5px;
+    }
+    /* a propos */
+    .apropos{
+        background-color: hwb(0 80% 20% / 0.201);
+    }
+    .main-fig{
+        margin-top: 20vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    figure{
+        max-width: 65vh;
+        padding: 5px;
+        margin: auto;
+        border: 3px solid #3c096c;
+        margin-bottom: 5vh;
+    }
+    figure #ben{
+        max-width: 80vh;
+        height: 70vh;
+    }
+    figure #ngom{
+        height: 550px;
+        width: 65vh;
+    }
+    figure #oum{
+        height: 550px;
+        width: 65vh;
+    }
+    figure #ngom,#amy
+    {
+        max-width: 65vh;
+    }
+   
+    figcaption
+    {
+        background-color: #3c096c;
+        font-family: "Merriweather", serif;
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+
+    }
+

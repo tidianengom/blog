@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: verdana;
+    text-decoration: none;
+}
+
+.menu1
+{
+    position: fixed;
+    top: 0;
+    background-color: #3c096c;
+    width: 100%;
+    height: 5vh;
+    color: white;
+    place-items: center;
+    display: flex;
+    border-top: 3px dotted white;
+    z-index: 10000;
+}
+.left-icon
+{
+    position: absolute;
+    left: 5vh;
+    display: flex;
+}
+
+.left-icon i
+{
+    color: white;
+    font-weight: bold;
+}
+.left-icon p, .right-icon i
+{
+    margin-left: 3vh;
+    font-size: 17px;
+
+}
+
+.right-icon
+{    
+    position: absolute;
+    right: 5vh;
+}
+
+/* MENU2 */
+.menu2
+{
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    top: 5vh;
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+    z-index: 1000;
+}
+.menu2 .logo img
+{
+    max-width: 55px;
+    max-height: 45px;
+    position: absolute;
+    left: 5vh;
+    top: 1.5vh;
+}
+
+.elements ul
+{
+    display: flex;
+    position: absolute;
+    right: 1.5vh;
+    top: 3vh;
+}
+.elements ul a
+{
+    margin-left: 3vh;
+    color: black;
+    font-weight: bold;
+    font-family: "Merriweather", serif;
+}
+.elements ul a i
+{
+    color: #3c096c;
+}
+/* ARTICLE  */
+main h4
+{
+    margin-top: 17vh;
+    text-align: center;
+    margin-bottom: vh;
+    font-family: "Merriweather", serif;
+    font-size: 25px;
+
+}
+main h6{
+    background-color: #3c096c;
+    width: 400px;
+    height: 4px;
+    border-radius: 4px;
+    margin-top: 15vh;
+    margin: auto;
+}
+dt{
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+}
+dd{
+    display: block;
+    unicode-bidi: isolate;
+    margin-left: 10vh;
+    font-family: "Merriweather", serif;
+}
+.principal {
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 5px;
+padding: 5px;
+margin-top: 4vh;
+padding-top: 4vh;
+}
+
+.place1 { grid-area: 1 / 1 / 2 / 2; }
+.place2 { grid-area: 1 / 2 / 2 / 3; }
+.place3 { grid-area: 2 / 1 / 3 / 2; }
+.place4 { grid-area: 2 / 2 / 3 / 3; }
+.place5 { grid-area: 3 / 1 / 4 / 2; }
+.place6 { grid-area: 3 / 2 / 4 / 3; }
+.principal .place1 img{
+    width: 100%;
+    height: 60%;
+}
+.principal .place3 img{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.principal .place5 img{
+    width: 100%;
+    height: 60%;
+}
+.principal a{
+    color: #3c096c;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+}
+/* article1  */
+main h2
+{
+    margin-top: 16vh;
+    text-align: center;
+}
+.article {
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-template-rows: 1fr;
+grid-column-gap: 15px;
+grid-row-gap: 0px;
+margin-top: 10vh;
+}
+
+.image { grid-area: 1 / 1 / 2 / 2; }
+.text { grid-area: 1 / 2 / 2 / 3; }
+.article .image img{
+    width: 100%;
+    height: 100%;
+}
+.article .text p{
+    font-family: "Merriweather", serif;
+}
+/* partie footer */
+    footer{
+        background-color: #3c096c;
+        display: flex;
+        margin-top: 5vh;
+    }
+    footer address{
+        display: flex;
+        margin: auto;
+        color: #fff;
+        padding: 5px;
+        border-left: 5px solid #fff;
+        border-right: 5px solid #fff;
+    }
+    hgroup{
+        float: right;
+    }
+    hgroup p i{
+        margin: 5px;
+    }
+    hgroup p{
+        display: flex;
+        justify-items: flex-start;
+        flex-wrap: wrap;
+        margin-left: 5vh;
+        color: #fff;
+        margin: 15px;
+        padding: 5px;
+    }
+    hgroup pre{
+        text-align: center;
+        font-size: 18px;
+        font-family: "Merriweather", serif;
+        margin-left: 50vh;
+        margin-top: 5vh;
+        color: #fff;
+    }
+    hgroup pre i{
+    }
+    .icon-footer{
+        align-self: self-end;
+        margin-right: 100px;
+        padding: 15px;
+        margin: 10px;
+    }
+    .icon-footer i{
+        margin: 15px;
+        color: #fff;
+    }
+    .news{
+        margin: 20px;
+    }
+    .news label{
+        font-size: 18px;
+        font-family: "Merriweather", serif;
+        color: #fff;
+    }
+    .news button{
+        padding: 5px;
+        cursor: pointer;
+        color: black;
+    }
+    .news input{
+        padding: 5px;
+    }
+    .elements .hamburger {
+    display: none;
+    width: 35px;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+
+}
+    @media screen and (max-width: 700px) {
+    .left-icon{
+        display: none;
+    }
+    .bienvenue{
+        width: 100%;
+        
+    }
+    hgroup pre{
+        display: none;
+    }
+
+    .right-icon{
+        
+    }
+}
+@media screen and (max-width: 1000px) {
+    .menu2 {
+        position: absolute;
+        background-color: rgba(63, 63, 222, 0.253);
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        position: fixed;
+        
+    }
+    .elements ul{
+        display: flex;
+        flex-direction: column;
+        
+        
+        
+    }
+    .elements ul li{
+        margin: 25px 0;
+
+    }
+    .elements ul li a{
+        color: red;
+    }
+    
+    .elements{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+    figure {
+        width: 90%;
+    }
+    .principal{
+        display: flex;
+        flex-direction: column;
+    }
+    .principal img{
+        width: 40%;
+    }
+    .article{
+        display: flex;
+        flex-direction: column;
+    }
+    .article .image img {
+        
+    }
+}
