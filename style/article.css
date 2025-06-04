@@ -220,8 +220,6 @@ margin-top: 10vh;
         margin-top: 5vh;
         color: #fff;
     }
-    hgroup pre i{
-    }
     .icon-footer{
         align-self: self-end;
         margin-right: 100px;
@@ -268,9 +266,6 @@ margin-top: 10vh;
         display: none;
     }
 
-    .right-icon{
-        
-    }
 }
 @media screen and (max-width: 1000px) {
     .menu2 {
@@ -322,8 +317,5 @@ margin-top: 10vh;
     .article{
         display: flex;
         flex-direction: column;
-    }
-    .article .image img {
-        
     }
 }
