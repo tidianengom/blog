@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: verdana;
     text-decoration: none;
 }
 
@@ -86,14 +85,7 @@
 {
     color: #3c096c;
 }
-.elements .hamburger {
-    display: none;
-    width: 35px;
-    position: absolute;
-    top: 35px;
-    right: 35px;
 
-}
 @media screen and (max-width: 700px) {
     .left-icon{
         display: none;
@@ -187,6 +179,7 @@
         width: 100%;
         margin: 10px;
     }
+    
 
 }
 
@@ -287,32 +280,31 @@
         width: 50%;
         float: right;
         height: 500px;
-        margin-top: -15vh;
+        margin-top: -10vh;
         margin-bottom: 5vh;
-        border-radius: 100vh;
+        border-radius: 115vh;
     }
    
     
     
      .bienvenue{
-        margin-top: 80vh;
+        margin-top: 20vh;
+        margin-bottom: 5vh;
      }
-    .bienvenue h1
+    main .bienvenue h1
     {
-        margin-top: -350px;
+        margin-top: 35vh;
         margin-left: 5vh;
         font-family: "Merriweather", serif;
-    }
-    .bienvenue h1
-    {
         font-weight: bold;
         font-size: 70px;
     }
+    
     .bienvenue p
     {
         color: black;
         margin-left: 5vh;
-        margin-top: 3vh;
+        margin-top: 5vh;
         letter-spacing: px;
         word-spacing: 3px;
         font-family: "Merriweather", serif;
@@ -325,7 +317,7 @@
       grid-column-gap: 15px;
       grid-row-gap: 5px;
       border-radius:  4px;
-      margin-top: 200px;
+      margin-top: 300px;
       margin-bottom: 5vh;
       background-color: hwb(0 80% 20% / 0.201);
     }
@@ -423,27 +415,30 @@
         flex-wrap: wrap;
     }
     figure{
-        max-width: 65vh;
+        max-width: 45vh;
         padding: 5px;
         margin: auto;
         border: 3px solid #3c096c;
         margin-bottom: 5vh;
     }
     figure #ben{
-        max-width: 80vh;
-        height: 70vh;
+        max-width: 45vh;
+        height: 60vh;
     }
-    figure #ngom{
-        height: 550px;
-        width: 65vh;
-    }
-    figure #oum{
-        height: 550px;
-        width: 65vh;
-    }
-    figure #ngom,#amy
+    
+    figure #ngom
     {
-        max-width: 65vh;
+        max-width: 45vh;
+        height: 60vh;
+    }
+    figure #oum
+    {
+        width: 45vh;
+        height: 60vh;
+    }
+    figure #amy{
+        width: 45vh;
+        height: 63vh;
     }
    
     figcaption
